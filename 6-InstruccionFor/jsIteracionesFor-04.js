@@ -1,7 +1,14 @@
 function mostrar()
 {
-	alert("ok");
+
+for (let n=0; n<10; n++)
+{
+	console.log(n);
 
 
-
+	if (n==6)
+	{
+		break;
+	}
+}
 }//FIN DE LA FUNCIÓN

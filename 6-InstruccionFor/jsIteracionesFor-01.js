@@ -1,4 +1,9 @@
 function mostrar()
 {
-	alert("ok");
+	
+for (let num = 1; num <= 10; num++)
+{
+	alert(num);
+}
+
 }

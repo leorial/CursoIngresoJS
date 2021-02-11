@@ -1,9 +1,15 @@
-var miIntervalo ;
+
+let num;
+
+num=10
 
 function inicio()
 {	
-	alert("function inicio.");
-	miIntervalo = setInterval(SegundosEnElAire, 3000);
+	while (num > 0)
+	{
+		alert(num);
+		num=num-1
+	}
 	
 }//FIN DE LA FUNCIÓN inicio
 

@@ -7,42 +7,29 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 let largo;
 let ancho;
 let radio;
-let perimetro;
-let diametro;
-let circunferencia;
-let superficie;
-let cemento;
-let cal;
+let circunsferencia;
+let superficie
 
 function Rectangulo () 
 {
-    largo=document.getElementById("txtIdLargo").value;
-    largo=parseInt(largo);
-    ancho=document.getElementById("txtIdAncho").value;
-    ancho=parseInt(ancho);
-    perimetro=(ancho*2)+(largo*2);
+    largo=parseInt(document.getElementById("txtIdLargo").value);
+    ancho=parseInt(document.getElementById("txtIdAncho").value);
+    alert("metros de alambre: :"+(ancho*2+largo*2)*3);
 
-    alert(perimetro*3 + " Metros de alambre.")
 }
 function Circulo () 
-{   
-    radio=document.getElementById("txtIdRadio").value;
-    radio=parseInt(radio);
+{
+    radio=parseInt(document.getElementById("txtIdRadio").value);
     diametro=radio*2;
-    circunferencia=diametro*3.14
-
-    alert(circunferencia + " Metros de alambre.")
+    circunsferencia=3.14*diametro;
+    alert("metros de alambre a comprar: "+circunsferencia*3);
+    
 }
 function Materiales () 
 {
-    largo=document.getElementById("txtIdLargo").value;
-    largo=parseInt(largo);
-    ancho=document.getElementById("txtIdAncho").value;
-    ancho=parseInt(ancho);
+    largo=parseInt(document.getElementById("txtIdLargo").value);
+    ancho=parseInt(document.getElementById("txtIdAncho").value);
     superficie=largo*ancho;
-    cemento=2
-    cal=3
-
-    alert("se necesitaran " + superficie*cemento + " bolsas de cemento y " + superficie*cal + " bolsas de cal." );
-
+    alert("se necesitan "+superficie/2 +" bolsas de cemento y "+superficie/3 +" bolsas de cal");
+	
 }
